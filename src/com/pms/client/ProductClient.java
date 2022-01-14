@@ -50,6 +50,7 @@ public class ProductClient {
 				Integer a=sc.nextInt();
 				if(a==1) {
 					System.out.println("What will be the new Product Name?");
+					sc.nextLine();
 					String newName = sc.nextLine();
 					ps.update(id1,newName);
 				}
@@ -63,6 +64,8 @@ public class ProductClient {
 					Double pri = sc.nextDouble();
 					ps.update(id1,pri,1);
 				}
+				else
+					System.out.println("Wrong Choice! ");
 				break;
 				
 			case 4:

@@ -37,7 +37,15 @@ public class ProductServiceImpl implements ProductService{
 		
 	}
 	public void display() {
-		System.out.println(productList);
+		for(Product p : productList) {
+			System.out.println("Id: "+p.getProductId());
+			System.out.println("Name: "+p.getProductName());
+			System.out.println("Quantity: "+p.getQuantity());
+			System.out.println("Price: "+ p.getPrice());
+			
+			System.out.println("\n");
+		}
+		
 		
 	}
 
